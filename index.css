@@ -187,7 +187,7 @@ ul > li {
 
 .card-custom {
 	position: relative;
-	width: 50%;
+	width: 60%;
 	height: 60vh;
 }
 
@@ -229,6 +229,11 @@ ul > li {
 
 .card-custom:hover .back{
 	transform: perspective(600px) rotateY(-360deg);
+}
+
+.subtitle {
+	font-family: "EB Garamond Regular", serif;
+	font-size: 1.5rem;
 }
 
 footer {
