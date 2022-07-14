@@ -1,0 +1,267 @@
+@charset "utf-8";
+/*CSS Reset*/
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/*body*/
+body {
+	font-family: "Cormorant SC", serif;
+	color: #707070;
+	font-size: 32px;
+}
+
+h1 {
+	font-size: 5rem;
+	margin-bottom: 0;
+}
+
+h2 {
+	font-size: 4rem;
+}
+
+h3 {
+	font-size: 3rem;
+}
+
+h4 {
+	font-size: 2rem;
+}
+
+p {
+	font-size: 2rem;
+	padding: 0;
+}
+
+ul > li {
+	font-size: 1rem;
+	font-family: "EB Garamond Regular", serif;
+	color: #707070;
+}
+
+
+.logo {
+	max-width: 9vw;
+	position: fixed;
+	z-index: 2;
+	top: 3%;
+	right: 1%;
+}
+
+.logo-nav {
+	max-width: 4vw;
+	margin: 2.5vh 0;
+}
+
+.nav-mid {
+	display: none;
+}
+
+.nav-main {
+	display: block;
+}
+
+
+.item {
+	padding-bottom: 10px;
+	padding-right: 10%;
+	font-size: 1.7rem;
+	text-decoration: none;
+	color: #707070;
+	text-align: end;
+}
+
+.item:hover {
+	text-decoration: underline;
+	text-decoration-color: #707070;
+}
+
+
+.intro {
+	text-align: right;
+	font-family: "EB Garamond Regular", serif;
+
+}
+
+.profile, .profile-back {
+	font-family: "EB Garamond Regular", serif;
+	color: #707070;
+	text-align: center;
+
+}
+
+.project {
+	font-family: "EB Garamond Regular", serif;
+	color: #707070;
+
+}
+
+.custom-nav {
+	z-index: 1;
+	display: flex;
+	width: 12%;
+	align-content: flex-end;
+	padding: 0;
+}
+
+.nav-links {
+	align-items: center;
+	justify-content: center;
+}
+
+
+.content {
+	overflow-y: none;
+	width: 88%;
+}
+
+.btn-landing{
+	border: none;
+}
+
+
+.btn-landing:hover{
+ 	transform: scale(1.1);
+	transition: 0.5s;
+}
+
+
+.image {
+ 	display: flex;
+ 	justify-content: center;
+ 	background-image: url(https://i.pinimg.com/originals/99/7e/d8/997ed8e905e82f735b0090074a5ba9fe.jpg);
+	background-position: center;
+	background-size: cover;
+	text-decoration-color: white;
+}
+
+.image h2, .image-2 h2{
+	font-family: "EB Garamond Regular", serif;
+	opacity: 0;
+	transform: scale(0);
+	transition: 0.8s;
+	color: white;
+	font-size: 3rem;
+	text-align: center;
+	
+}
+
+.image:hover, .image-2:hover{
+	box-shadow: 0 0 0 100vh rgba(0, 0, 0, 0.9) inset;
+}
+
+.image:hover h2, .image-2:hover h2{
+	opacity: 1;
+	transform: scale(1)
+}
+
+.image-2 {
+ 	display: flex;
+ 	justify-content: center;
+ 	background-image: url("https://images.unsplash.com/photo-1503252947848-7338d3f92f31?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1031&q=80");
+ 	background-position: center;
+ 	background-size: cover;
+	text-decoration-color: white;
+}
+
+.form-label, .form-control{
+	font-size: 1.5rem;
+	font-family: "EB Garamond Regular", serif;
+	padding: 2px;
+	color: white;
+	padding-left: 1rem;
+	text-align: center;
+}
+
+.form{
+	padding: 10%;
+}
+
+.form button {
+	font-weight: bold;
+	font-size: 1.5rem;
+	color: #39393B;
+}
+
+.card-custom {
+	position: relative;
+	width: 50%;
+	height: 60vh;
+}
+
+.card-custom .face{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	backface-visibility: hidden;
+	border-radius: 10px;
+	overflow: hidden;
+	transition: .8s;
+}
+
+.card-custom .front{
+	transform: perspective(600px) rotateY(0deg);
+}
+
+
+.card-custom .front h4 {
+	width: 100;
+	font-weight: bold;
+	text-align: center;
+	bakcground: rgba(0,0,0,.4);
+}
+
+.card-custom .back{
+	font-weight: bold;
+	transform: perspective(600px) rotateY(-180deg);
+	background: #707070;
+	padding: 15px;
+	color: white;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.card-custom:hover .front{
+	transform: perspective(600px) rotateY(-180deg);
+}
+
+.card-custom:hover .back{
+	transform: perspective(600px) rotateY(-360deg);
+}
+
+footer {
+	padding: 0.7rem;
+}
+
+footer span {
+	margin-left: 0.5rem;
+	margin-right: 0.5rem;
+	/*margin: 0, .5rem*/
+}
+
+
+@media only screen and (max-width: 991px){
+
+.nav-mid {
+	display: block;
+}
+
+.nav-main {
+	display: none;
+}
+	
+.intro {
+	text-align: center;
+	font-family: "EB Garamond Regular", serif;
+
+}
+.content {
+	overflow-y: none;
+	width:100%;
+}
+
+}
+
+
