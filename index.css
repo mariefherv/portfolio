@@ -11,6 +11,7 @@ body {
 	font-family: "Cormorant SC", serif;
 	color: #707070;
 	font-size: 32px;
+	overflow-x: hidden;
 }
 
 h1 {
@@ -56,6 +57,11 @@ ul > li {
 
 .nav-small .logo-nav {
 	max-width: 5vw;
+	margin: 3vh 0;
+}
+
+.logo-small {
+	max-width: 7vw;
 	margin: 3vh 0;
 }
 
