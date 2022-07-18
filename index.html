@@ -17,17 +17,26 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@300;400;500;600;700&family=EB+Garamond:ital,wght@1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
 
-	<title>Capstone 1</title>
+	<title>Mariefher Villanueva</title>
 </head>
 
 <body>
-	<div class="d-flex flex-row-reverse ">
-		<img src="assets/VM-logo.png" class="logo d-md-block d-none">
+	<div class="d-flex flex-md-row-reverse flex-column">
 		
-		<!--	navbar-side	-->
+		<!--	navbar-top (small screen)	-->
+		<div class="custom-nav-small container-fluid vw-100 d-md-none d-flex">
+			<div class="nav-small bg-light px-3 flex-row d-md-none d-flex w-100 justify-content-around align-items-center">
+					<div><a class="text-decoration-none" href="#home" style="color: #707070;"><img src="assets/home-icon-01.png" class="logo-nav"></a></div>
+					<div><a class="text-decoration-none" href="#profile" style="color: #707070;"><img src="assets/profile-icon-01.png" class="logo-nav"></a></div>
+					<div><a class="text-decoration-none" href="#projects" style="color: #707070;"><img src="assets/portfolio-icon-01.png" class="logo-nav"></a></div>
+					<div><a class="text-decoration-none" style="color: #707070;" href="#connect"><img src="assets/connect-icon-01.png" class="logo-nav"></a>
+				</div>	
+			</div>
+		</div>
 		
-		<div class="bg-light custom-nav container-fluid d-flex d-md-flex d-none justify-content-center">
-			<div class="ml-1 px-3 vh-100 position-fixed flex-column justify-content-center d-md-flex d-none text-end">
+		<!--		navbar-side (mid and large screens)		-->
+		<div class="bg-light custom-nav container-fluid d-md-flex d-none justify-content-center">
+			<div class="bg-light ml-1 px-3 vh-100 position-fixed flex-column justify-content-center d-md-flex d-none text-end">
 				<!-- navbar-mid -->
 				<div class="nav-mid">
 					<div><a class="text-decoration-none" href="#home" style="color: #707070;"><img src="assets/home-icon-01.png" class="logo-nav"></a></div>
@@ -35,7 +44,7 @@
 					<div><a class="text-decoration-none" href="#projects" style="color: #707070;"><img src="assets/portfolio-icon-01.png" class="logo-nav"></a></div>
 					<div><a class="text-decoration-none" style="color: #707070;" href="#connect"><img src="assets/connect-icon-01.png" class="logo-nav"></a></div>
 				</div>
-					
+
 				<!-- navbar-main -->
 				<div class="nav-main mt-5">
 					<div class="item"><a class="text-decoration-none" href="#home" style="color: #707070;">home</a></div>
@@ -51,7 +60,7 @@
 			<div class="d-flex container-fluid py-4 px-5 align-items-center" style="background-image: url('assets/landing-bg.jpg'); height: auto; min-height: 100vh; background-repeat: no-repeat; background-position: center;" id="home">
 
 				<div class="row flex-grow-1">
-					<div class="col-lg-3 col-12 my-lg-auto text-lg-start text-center mb-5 pb-5">
+					<div class="col-lg-3 col-12 my-lg-auto text-lg-start text-center mb-5 pb-5 mx-auto">
 						<h1>Welcome.</h1>
 						<p style="white-space: nowrap;">Feel free to explore</p>
 					</div>
@@ -73,15 +82,15 @@
 			<div class="container-fluid py-4 px-5" style="background-image:url('assets/profile-bg.jpg'); height: auto; min-height: 100vh; background-position: center; background-size: cover; " id="profile">
 				<div class="row">
 					<div class="col-lg-8 col-12 order-lg-1 order-2 py-5 mt-lg-5">
-						<div class="d-flex">
-							<div class="card-custom shadow m-3">
+						<div class="d-sm-flex d-block">
+							<div class="card-custom shadow m-sm-3 mx-auto">
 								<div class="face front bg-white">
 									<h4 class="profile mt-5">Basic Information</h4>
-									<lead class="subtitle m-5 text-center">Hover here to view card.</lead>
+									<p class="subtitle m-5 text-center">Hover here to view card.</p>
 								</div>
 
 								<div class="face back">
-									<h4 class="profile-back my-auto text-white py-5">Basic Information</h4>
+									<h4 class="profile-back my-auto py-5">Basic Information</h4>
 									<div class="card px-3 text-center">
 									  <ul class="list-group list-group-flush">
 										<li class="list-group-item">Age : 21</li>
@@ -95,14 +104,14 @@
 						
 							</div>
 							
-							<div class="card-custom shadow m-3">
+							<div class="card-custom shadow m-sm-3 mx-auto mt-3">
 								<div class="face front bg-white">
 									<h4 class="profile mt-5">Hobbies</h4>
-									<lead class="subtitle m-5 text-center">Hover here to view card.</lead>
+									<p class="subtitle m-5 text-center">Hover here to view card.</p>
 								</div>
 
 								<div class="face back">
-									<h4 class="profile-back my-auto text-white py-5">Hobbies</h4>
+									<h4 class="profile-back my-auto  py-5">Hobbies</h4>
 									<div class="card px-3 text-center">
 									  <ul class="list-group list-group-flush">
 										<li class="list-group-item">Listen to music, a lot.</li>
@@ -126,7 +135,7 @@
 					</div>
 				</div>
 			</div>
-
+			
 
 		<!-- Projects -->
 			<div class="container-fluid py-4 px-5" style="background-image: url('assets/projects-bg.jpg'); height: auto; min-height: 100vh; background-repeat: no-repeat; background-position: center; background-size: cover;" id="projects">
@@ -177,25 +186,25 @@
 						 <button type="submit" class="btn btn-light my-4 rounded-pill py-2 w-50">Send Email</button>
 					</form>
 					<div class="container-fluid w-100 vh-100 my-auto">
-						<div class="mapouter w-100 h-100"><div class="gmap_canvas w-100 h-100" ><iframe id="gmap_canvas" src="https://maps.google.com/maps?q=Zuitt%20&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" class="w-100 h-100"></iframe><a href="https://fmovies-online.net"></a><br><style>{overflow:hidden;background:none!important;height:500px;width:auto;}</style></div></div>
+						<div class="mapouter w-100 h-100"><div class="gmap_canvas w-100 h-100" ><iframe id="gmap_canvas" src="https://maps.google.com/maps?q=Zuitt%20&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" class="w-100 h-100"></iframe><a href="https://fmovies-online.net"></a><br>
 						</div>
-					</div>
-
 				</div>
 
-			<div class="container-fluid text-center w-100 bg-light">
-			<footer>
-				<a href="https://www.twitter.com" class="text-decoration-none" style="color: #707070;"><span>Twitter</span></a>
-				<span>|</span>
-				<a href="https://www.facebook.com" class="text-decoration-none" style="color: #707070;"><span>Facebook</span></a>
-				<span>|</span>
-				<span>&copy; Mariefher Villanueva. All Rights Reserved</span>
-			</footer>
-			</div>
-				
 			</div>
 		
-
+			</div>
+		</div>
+		<div class="container-fluid text-center vw-100 bg-light">
+			<footer>
+				<a href="https://www.twitter.com" class="text-decoration-none" style="color: #707070;"><span><img src="assets/twitter-logo.png" width="30vw"></span></a>
+				<a href="https://www.facebook.com" class="text-decoration-none" style="color: #707070;"><span><img src="assets/facebook-logo.png" width="30vw"></span></a>
+				<span>|</span>
+				<span class="footer">&copy; Mariefher Villanueva</span>
+				<span>|</span>
+				<span class="footer"> All Rights Reserved</span>
+			</footer>
+			</div>
+		</div>
 	</div>
 
 
