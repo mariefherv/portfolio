@@ -99,6 +99,12 @@ ul > li {
 
 }
 
+.intro > img {
+	width: 100%;
+	height: auto;
+	object-fit: contain;
+}
+
 .profile, .profile-back {
 	font-family: "EB Garamond Regular", serif;
 	color: #707070;
