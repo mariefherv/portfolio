@@ -219,6 +219,7 @@ ul > li {
 
 .subtitle {
 	font-family: "EB Garamond Regular", serif;
+	word-wrap: normal;
 }
 
 footer {
