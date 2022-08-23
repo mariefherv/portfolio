@@ -210,9 +210,7 @@ ul > li {
 	
 }
 
-.intro + img {
-	height: 70vh;
-}
+
 
 .card-custom > div > p {
 	font-size: 4vh;
@@ -221,7 +219,6 @@ ul > li {
 
 .subtitle {
 	font-family: "EB Garamond Regular", serif;
-	font-size: 1.5rem;
 }
 
 footer {
@@ -273,6 +270,11 @@ footer span {
 	font-family: "EB Garamond Regular", serif;
 
 }
+
+.subtitle {
+	font-family: "EB Garamond Regular", serif;
+}
+
 .content {
 	z-index: 1;
 	overflow-y: none;
